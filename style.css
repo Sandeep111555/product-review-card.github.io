@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+:root{
+--Dark_cyan: hsl(158, 36%, 37%);
+--dark:hsl(150, 36%, 17%);
+--Cream: hsl(30, 38%, 92%);
+--Very_dark_blue: hsl(212, 21%, 14%);
+--Dark_grayish_blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--primaryfont-family: 'Montserrat', sans-serif;
+--secondary-font-family: 'Fraunces', serif;
+--f1:700;
+--f2:500;
+}
+body{
+    background-color: var(--Cream);
+    padding:1rem 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:calc(100vh - 1px);
+}
+.main{
+    background-color: white;
+    border-radius: 1.2rem;
+    margin-bottom: 0.5rem;
+    /* height:calc(100vh-1px); */
+    overflow: hidden;
+
+}
+img{
+    /* margin-top: 3rem; */
+    width:100%;
+
+}
+p h1 h2 h3{
+    overflow-wrap:break-word;
+}
+
+.text{
+    font-family: var(--secondary-font-family);
+    padding:1rem 1.5rem;
+}
+.text h1{
+    margin-bottom:0.8rem;
+    font-size: 40px;
+}
+p{
+    color:var(--Dark_grayish_blue);
+    font-family:var(--primaryfont-family);
+    margin-bottom:0.5rem;
+}
+.price{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+.current{
+    font-size:23px;
+    color:var(--Dark_cyan);
+    
+    margin-right:5px;
+}
+.previous{
+    color:var(--Dark_grayish_blue);
+    font-family: var(--primaryfont-family);
+    margin-left:0.8rem;
+}
+button{
+    width:100%;
+    background-color: var(--Dark_cyan);
+    height:7vh;
+    border-radius: 0.7rem;
+    color:white;
+    border:none;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: medium;
+}
+
+button::before{
+    content: url("/images/icon-cart.svg");
+    margin-right:6px;
+}
+
+button:hover{
+    background-color: var(--dark);
+    cursor:pointer;
+
+}
+
+@media (min-width:500px)
+{
+    .main{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+       max-width:600px;
+       overflow: hidden;
+       height:470px;
+    }
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center !important;
+    /* background-color: red; */
+    height:calc(100vh - 1px);
+}
+    .text{
+        width:30rem;
+        height:30rem;
+    }
+
+}
