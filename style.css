@@ -33,15 +33,11 @@ body{
     margin-bottom: 0.5rem;
     /* height:calc(100vh-1px); */
     overflow: hidden;
-
 }
 img{
     /* margin-top: 3rem; */
-    width:100%;
+    max-width:100%;
 
-}
-p h1 h2 h3{
-    overflow-wrap:break-word;
 }
 
 .text{
